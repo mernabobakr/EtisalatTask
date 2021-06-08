@@ -1,6 +1,7 @@
 package com.example.task.entity;
 
 import com.fasterxml.jackson.annotation.JsonBackReference;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonManagedReference;
 import java.util.List;
 import javax.persistence.Column;
@@ -25,7 +26,7 @@ public class Department {
 
   @Column(name = "department_name")
   private String departmentName;
-  @JsonManagedReference
+  @JsonIgnore
   @OneToOne
   @JoinColumn(name = "manager_id", referencedColumnName = "id")
   private Employee manager;
