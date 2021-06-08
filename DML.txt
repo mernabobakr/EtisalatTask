@@ -1,0 +1,3 @@
+
+INSERT INTO `department` VALUES (1,'development',2,10),(2,'HR',1,5),(3,'marketing',3,5);
+INSERT INTO `employee` VALUES (1,'ahmed',10000,'hr mnager',2),(2,'ayman',35000,'team leader',1),(3,'mazen',40000,'marketing specialist',3),(4,'tamer',10000,'content writer',3),(5,'merna',10000,'hr',2),(6,'bassant',7000,'contentwriter',3),(7,'abdallh',10000,'hr',2),(8,'nour',20000,'senior developer',1),(9,'rana',30000,'senior marketer',3),(10,'noha',20000,'hr',2);
