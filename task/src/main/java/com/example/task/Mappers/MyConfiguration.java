@@ -15,9 +15,9 @@ public class MyConfiguration implements OrikaMapperFactoryConfigurer {
 
   @Override
   public void configure(MapperFactory orikaMapperFactory) {
-    orikaMapperFactory.classMap(Department.class, DepartmentDto.class).exclude("employeeList").exclude("manager")
+    orikaMapperFactory.classMap(Department.class, DepartmentDto.class).exclude("employeeList").exclude("manager{department}")
         .byDefault().register();
-    orikaMapperFactory.classMap(Employee.class, EmployeeDto.class).exclude("jobTitle")
+    orikaMapperFactory.classMap(Employee.class, EmployeeDto.class)
         .byDefault().register();
   }
 }

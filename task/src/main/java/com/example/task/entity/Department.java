@@ -25,7 +25,7 @@ public class Department {
 
   @Column(name = "department_name")
   private String departmentName;
-  @JsonManagedReference
+
   @OneToOne
   @JoinColumn(name = "manager_id", referencedColumnName = "id")
   private Employee manager;
